@@ -3,69 +3,65 @@
 
 ---
 
-## 1. Mục tiêu  
-Dự đoán **giới tính (Nam/Nữ)** của cá thể trong dữ liệu liên quan đến ADHD (Attention Deficit Hyperactivity Disorder) bằng cách áp dụng các phương pháp **khám phá dữ liệu (EDA)**, **feature engineering**, và **machine learning models**.
+## 1. Objective  
+Predict the **sex (Male/Female)** of individuals in ADHD (Attention Deficit Hyperactivity Disorder) data by applying **Exploratory Data Analysis (EDA)**, **feature engineering**, and **machine learning models**.
 
 ---
 
-## 2. Thành viên nhóm  
-- Nhóm có **4 thành viên**:
-  - **3 thành viên**: Phụ trách EDA & Feature Engineering  
-  - **1 thành viên**: Phụ trách Fine-Tuning mô hình  
+## 2. Team Members  
+- The team has **4 members**:
+  - **3 members**: Responsible for EDA & Feature Engineering  
+  - **1 member**: Responsible for Model Fine-Tuning  
 
 ---
 
-## 3. Cấu trúc repo
+## 3. Repository Structure  
 
 - `Categorical_ADHD_EDA.ipynb`  
-  → Notebook khám phá dữ liệu các biến phân loại, phân tích phân phối, kiểm tra missing values, trực quan hóa quan hệ giữa các biến.  
+  → Notebook for exploring categorical variables, analyzing distributions, checking missing values, and visualizing feature relationships.  
 
 - `Data preprocessing_FE_official.ipynb`  
-  → Thực hiện tiền xử lý dữ liệu: xử lý giá trị thiếu, chuẩn hóa, mã hóa categorical, scaling, tạo thêm đặc trưng mới để tăng hiệu quả mô hình.  
+  → Data preprocessing: handling missing values, normalization, categorical encoding, scaling, and creating new features to improve model performance.  
 
 - `finetune.ipynb`  
-  → Fine-tuning mô hình Machine Learning: thử nghiệm nhiều thuật toán (XGBoost, LightGBM, RandomForest, hoặc deep learning), tối ưu hyperparameters và chọn mô hình tốt nhất.  
+  → Fine-tuning machine learning models: experimenting with algorithms (XGBoost, LightGBM, RandomForest, or deep learning), optimizing hyperparameters, and selecting the best-performing model.  
 
 - `README.md`  
-  → File hướng dẫn mô tả dự án.  
+  → This project documentation.  
 
 ---
 
-## 4. Quy trình làm việc
+## 4. Workflow  
 
-1. **Khám phá dữ liệu (EDA)**  
-   - Kiểm tra đặc trưng dữ liệu, phân tích thống kê, xử lý missing values.  
-   - Trực quan hóa dữ liệu để hiểu xu hướng và sự khác biệt giữa các nhóm.  
+1. **Exploratory Data Analysis (EDA)**  
+   - Inspect data characteristics, perform statistical analysis, and handle missing values.  
+   - Visualize data to understand trends and group differences.  
 
-2. **Tiền xử lý & Feature Engineering**  
-   - Chuẩn hóa và mã hóa dữ liệu.  
-   - Tạo đặc trưng mới (feature crosses, interactions, aggregations).  
-   - Lựa chọn tập biến tối ưu cho mô hình.  
+2. **Preprocessing & Feature Engineering**  
+   - Normalize and encode data.  
+   - Create new features (feature crosses, interactions, aggregations).  
+   - Select the optimal feature set for modeling.  
 
-3. **Fine-tuning mô hình**  
-   - Áp dụng nhiều thuật toán ML.  
-   - Grid search / Bayesian optimization để tối ưu hyperparameters.  
-   - Đánh giá trên metric phù hợp (ví dụ: ROC-AUC, F1-score).  
-
----
-
-## 5. Kết quả  
-- Đội **Naomi** đã đạt **Top 20 toàn cầu** trong cuộc thi **WiDS Datathon 2025** 🎉  
-- Đây là thành quả của việc kết hợp hiệu quả giữa phân tích dữ liệu, kỹ thuật feature engineering, và chiến lược fine-tuning mô hình.  
+3. **Model Fine-Tuning**  
+   - Apply multiple ML algorithms.  
+   - Use Grid Search / Bayesian Optimization for hyperparameter tuning.  
+   - Evaluate performance using relevant metrics (e.g., ROC-AUC, F1-score).  
 
 ---
 
-## 6. Cách sử dụng
+## 5. Results  
+- Team **Naomi** achieved **Top 30 worldwide** in the **WiDS Datathon 2025** 🎉  
+- This accomplishment reflects the effective combination of data analysis, feature engineering techniques, and fine-tuning strategies.  
 
-1. Clone repository:
+---
+
+## 6. Usage  
+
+1. Clone the repository:
    ```bash
    git clone https://github.com/empteax214/WiDS25-Naomi.git
    cd WiDS25-Naomi
-2. Cài đặt thư viện cần thiết (nếu có requirements.txt):
-   ```bash
-   git clone https://github.com/empteax214/WiDS25-Naomi.git
-   cd WiDS25-Naomi
-   
-## 7. Ghi nhận
-Xin cảm ơn ban tổ chức WiDS Datathon 2025 đã tạo ra một sân chơi học thuật tuyệt vời.
-Cảm ơn cộng đồng Kaggle và các mentor đã hỗ trợ.
+## 7. Acknowledgments
+
+Special thanks to the WiDS Datathon 2025 organizers for creating an amazing academic playground.
+Thanks also to the Kaggle community and mentors for their support.
